@@ -1,15 +1,15 @@
-name: Workflow Multiple Trigger
-on:
-  push:
-    branches:
-      - "*"
-  workflow_dispatch:
-  schedule:
-    - cron: "*/10 * * * *"
-
-jobs:
-  triggered_by:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug trigger event
-        run: echo "Le job a été déclenché par un événement de type ${{ github.event_name }}."
+#name: Workflow Multiple Trigger
+#on:
+#  push:
+#    branches:
+#      - "*"
+#  workflow_dispatch:
+#  schedule:
+#    - cron: "*/10 * * * *"
+#
+#jobs:
+#  triggered_by:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Debug trigger event
+#        run: echo "Le job a été déclenché par un événement de type ${{ github.event_name }}."
