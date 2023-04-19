@@ -10,3 +10,4 @@
 #    steps:
 #      - name: Say Hello World
 #        run: echo "Hello, world!"
+#        echo "Triggered by cron: ${{ github.event.schedule }}"
