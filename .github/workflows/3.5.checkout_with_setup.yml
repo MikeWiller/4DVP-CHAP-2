@@ -1,0 +1,16 @@
+name: Workflow using action Python
+on:
+  push:
+
+jobs:
+  execute_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Call
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 10
+      - name: Run Script Python Demo
+        run: python demo.py
