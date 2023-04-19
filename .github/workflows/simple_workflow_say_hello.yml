@@ -1,9 +1,10 @@
-name: "Simple Workflow - Say Hello"
+name: Say_Hello
 on:
-  push: 
+  push:
 jobs:
-  say_hello: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Say hello World"
-        run: echo "Hello, world !"
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Say Hello
+      run: echo "Hello, world!"
+
