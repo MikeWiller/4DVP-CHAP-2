@@ -1,6 +1,6 @@
 name: Workflow using action Python
 on:
-  push:
+#  push:
 
 jobs:
   execute_script:
