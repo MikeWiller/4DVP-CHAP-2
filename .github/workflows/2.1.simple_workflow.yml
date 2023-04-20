@@ -1,6 +1,6 @@
 name: Say_Hello
 on:
-  push:
+#  push:
 jobs:
   say_hello:
     runs-on: ubuntu-latest
