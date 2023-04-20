@@ -1,6 +1,6 @@
 name: Trois Jobs
 on:
-  push:
+#  push:
 jobs:
   first_job:
     runs-on: ubuntu-latest
