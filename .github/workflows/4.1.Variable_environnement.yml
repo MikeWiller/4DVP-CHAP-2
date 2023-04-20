@@ -2,13 +2,14 @@ name: Using Environment Variable Workflow
 
 on:
   push:
+  
+env:
+  MESSAGE : "Ceci est une variable d'environnement"
 
 jobs:
   display_env:
     runs-on: ubuntu-latest
     steps:
-    - name: Define Environment Variable Message
-      run: echo "Ceci est une variable d'environnement" >> $MESSAGE
     - name: show Environment Variable Message
-      run: echo "$MESSAGE = ${{env.MESSAGE}}"
+      run: echo "MESSAGE = ${{env.MESSAGE}}"
       
